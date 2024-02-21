@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<!--
+	마이바티스 참고 사이트
+	- http://blog.mybatis.org/
+	- http://www.mybatis.org/mybatis-3/ko/index.html
+	맵퍼 XML의 namespace를 정의할 때 @Mapper 어노테이션이 적용된
+	맵퍼 인터페이스의 완전한 클래스 이름과 동일하게 정의해야 한다. 
+	-->
+<mapper namespace="com.springbootstudy.app.mapper.MemoMapper" >
+	<select id="findAll" resultType="Member">
+		SELECT * FROM member;
+	</select>
+
+	
+	
+	
+	
+</mapper>
