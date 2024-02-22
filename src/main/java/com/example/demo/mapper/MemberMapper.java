@@ -9,9 +9,11 @@ import com.example.demo.entity.Member;
 
 @Mapper
 public interface MemberMapper {
-	@Select("SELECT * FROM member")
-	List<Member> memberList();
-
-	Member findById(String id);
+	
+	@Select("Select * from Member")
+	List<Member> getMemberList();
+	
+	List<Member> findAll();
+	
 	
 }

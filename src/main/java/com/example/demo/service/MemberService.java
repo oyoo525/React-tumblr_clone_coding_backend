@@ -8,19 +8,19 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Member;
 import com.example.demo.mapper.MemberMapper;
 
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
 public class MemberService {
+	
 	@Autowired
-	private MemberMapper memoMapper;
+	private MemberMapper memberMapper;
 	
 	
-	public List<Member> memoList() {
-		
-		return memoMapper.memberList();
+	public List<Member> getMemberList() {
+		List<Member> mList = memberMapper.getMemberList();
+		return mList;
 	}
 
 }
